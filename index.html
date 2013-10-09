@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>VCL Git講座</title>
+    <title>VCL Git勉強会</title>
     <!-- Bootstrap  -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/offcanvas.css" rel="stylesheet">
@@ -16,19 +16,19 @@
     <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">VCL Git講座</a>
+          <a class="navbar-brand" href="#">VCL Git勉強会</a>
         </div>
       </div><!-- /.container -->
     </div><!-- /.navbar -->
     <!-- /header -->
     
     <!-- contents -->
-    <div class="container">
-        <h1>Git Commands</h1>
-        <hr>
-        
+    <div class="container">        
         <div class="row row-offcanvas row-offcanvas-right">
             <div class="col-xs-12 col-sm-9">
+                <a href="koukan.html">こうかんにっき</a>
+                <h1>Git Commands</h1>
+                <hr>
             
                 <!-- git command descriptions -->
                 <div class="panel panel-default">
@@ -51,10 +51,28 @@
         
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                      <h3 class="panel-title"><a name="command_3">---</a></h3>
+                      <h3 class="panel-title"><a name="command_3">プッシュする</a></h3>
                     </div>
                     <div class="panel-body">
-                        git
+                        git push -u origin master
+                    </div>
+                </div>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">                
+                      <h3 class="panel-title"><a name="command_4">Indexにステージする</a></h3>
+                    </div>
+                    <div class="panel-body">
+                        git add [ステージするファイル(*で全てのファイル)]
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">                
+                      <h3 class="panel-title"><a name="command_5">コミットする</a></h3>
+                    </div>
+                    <div class="panel-body">
+                        git commit -m "めっせーじ"
                     </div>
                 </div>
                 <!-- /git command descriptions -->
@@ -66,7 +84,9 @@
                         <li>Index</li>
                         <li class="active"><a href="#command_1">リポジトリを作成</a></li>
                         <li><a href="#command_2">リモートリポジトリをクローン</a></li>
-                        <li><a href="#command_3">---</a></li>
+                        <li><a href="#command_3">プッシュする</a></li>
+                        <li><a href="#command_4">Indexにステージする</a></li>
+                        <li><a href="#command_5">コミットする</a></li>
                     </ul>
                 </div><!-- /well -->
             </div><!-- /col -->
